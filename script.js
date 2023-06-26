@@ -1,9 +1,9 @@
-function calculateMinCost() {
+function calculateMinCost(arr) {
   //your code here
     let pq = [];
 
         // Adding items to the pQueue
-        for (let i = 0; i < n; i++) {
+        for (let i = 0; i < arr.length; i++) {
             pq.push(arr[i]);
         }   
 
