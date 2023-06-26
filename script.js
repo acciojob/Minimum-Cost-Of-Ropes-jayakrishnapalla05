@@ -9,12 +9,12 @@ function calculateMinCost() {
       var totalCost = 0;
     for (var i = 0; i < arr.length; i++)
 	 {
-        cost = arr[i] + arr[i + 1];
-        totalCost += cost;
-        arr[i + 1] = cost;
         arr.sort(function(a, b) {
           return a - b;
         });
+        cost = arr[i] + arr[i + 1];
+        totalCost += cost;
+        arr[i + 1] = cost;
 	 }
       document.getElementById("result").innerHTML =totalCost;
   
